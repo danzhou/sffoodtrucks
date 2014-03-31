@@ -4,6 +4,8 @@ sffoodtrucks
 
 **Hosted Application**: http://dansffoodtrucks.appspot.com/sffoodtrucks/
 
+**Hosted Repository**: https://github.com/danzhou/sffoodtrucks
+
 **Technical Track**: Full Stack (a trivial back-end). The back-end sets up an API endpoint, /foodtrucks, that retrieves food trucks data from https://data.sfgov.org/Permitting/Mobile-Food-Facility-Permit/rqzj-sfat and sends it back to the front-end. The back-end is trivial in the sense that it does nothing beyond handing data from somewhere else to the front-end; I could have let the front-end directly talk to DataSF's API, which could also be faster than going through a backend. However, I chose to implement a trivial back-end because it allows more opportunities of code optimization. For example, assuming DataSF's food trucks data does not change very often, I can make the back-end store a copy of DataSF's data into its own database and periodically update that data, thereby speeding up data transfer to the front-end.
 
 **Technical Details**:
